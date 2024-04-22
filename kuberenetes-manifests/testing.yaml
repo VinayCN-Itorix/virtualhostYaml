@@ -10,6 +10,7 @@ spec:
   - "newHost.com"
   - "newHost.com"
   - "newHost.com1713754474672"
+  - "newHost.com1713760972954"
   gateways:
   - "apiwiz-system/apiwiz-gateway"
   http:
