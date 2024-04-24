@@ -1,0 +1,35 @@
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: apiwiz-gateway
+  namespace: apiwiz-system
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - hosts:
+    - '*.apiwiz.io'
+    port:
+      name: https-apiwiz
+      number: 443
+      protocol: HTTPS
+    tls:
+      credentialName: apiwiz-credential-2024
+      mode: SIMPLE
+  - hosts:
+    - mock.apiwiz.io
+    port:
+      name: https-mock-api
+      number: 443
+      protocol: HTTPS
+    tls:
+      credentialName: apiwiz-credential-2024
+      mode: SIMPLE
+  - hosts:
+    - '*.apiwiz.io'
+    port:
+      name: http-apiwiz
+      number: 80
+      protocol: HTTP
+    tls:
+      httpsRedirect: true
