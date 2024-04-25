@@ -8,6 +8,7 @@ spec:
   - apiwiz-system/apiwiz-gateway
   hosts:
   - apiwiz.io
+  - apibuilder.com
   http:
   - route:
     - destination:
