@@ -67,3 +67,20 @@ spec:
     tls:
       credentialName: acme-team-gcp-stage-1714012921611
       mode: SIMPLE
+  - hosts:
+    - testingApproved.com
+    port:
+      name: http-acme-team-gcp-stage-1714021039179
+      number: 80
+      protocol: HTTP
+    tls:
+      httpsRedirect: true
+  - hosts:
+    - testingApproved.com
+    port:
+      name: https-acme-team-gcp-stage-1714021039179
+      number: 443
+      protocol: HTTPS
+    tls:
+      credentialName: acme-team-gcp-stage-1714021039148
+      mode: SIMPLE
