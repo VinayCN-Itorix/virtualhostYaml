@@ -8,7 +8,6 @@ spec:
   - apiwiz-system/apiwiz-gateway
   hosts:
   - apiwiz.io
-  - testingApproved.com
   http:
   - match:
     - uri:
