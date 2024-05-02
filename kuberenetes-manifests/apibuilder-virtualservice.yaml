@@ -8,6 +8,7 @@ spec:
   - apiwiz-system/apiwiz-gateway
   hosts:
   - apiwiz.io
+  - icici.com
   http:
   - match:
     - uri:
