@@ -9,6 +9,7 @@ spec:
   hosts:
   - apiwiz.io
   - vinay-apibuilder.com
+  - shridhara-apibuilder.com
   http:
   - match:
     - uri:
