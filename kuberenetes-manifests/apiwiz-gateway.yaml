@@ -50,3 +50,20 @@ spec:
     tls:
       credentialName: acme-team-gcp-stage-1714634608045
       mode: SIMPLE
+  - hosts:
+    - vinay-apibuilder.com
+    port:
+      name: http-acme-team-gcp-stage-1714730508524
+      number: 80
+      protocol: HTTP
+    tls:
+      httpsRedirect: true
+  - hosts:
+    - vinay-apibuilder.com
+    port:
+      name: https-acme-team-gcp-stage-1714730508524
+      number: 443
+      protocol: HTTPS
+    tls:
+      credentialName: acme-team-gcp-stage-1714730508463
+      mode: SIMPLE
