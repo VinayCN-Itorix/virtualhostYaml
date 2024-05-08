@@ -9,6 +9,7 @@ spec:
   hosts:
   - apiwiz.io
   - varun-apibuilder.com
+  - builder-test.ICIC.com
   http:
   - match:
     - uri:
