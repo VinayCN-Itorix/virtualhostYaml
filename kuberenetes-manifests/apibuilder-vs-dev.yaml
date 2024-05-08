@@ -11,6 +11,7 @@ spec:
   - varun-apibuilder.com
   - builder-test.ICIC.com
   - builder-test.ICIC.com
+  - builder-test.ICIC.com
   http:
   - match:
     - uri:
