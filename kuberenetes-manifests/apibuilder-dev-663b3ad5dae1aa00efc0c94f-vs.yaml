@@ -6,12 +6,10 @@ metadata:
 spec:
   gateways:
   - apiwiz-system/apiwiz-gateway
+  hosts:
+  - builder-test.ICIC.com
   http:
-  - headers:
-      request:
-        add:
-          x-tenant: acme-team-gcp-stage-1715157708906--ApiBuilder
-    match:
+  - match:
     - uri:
         prefix: /
     route:
@@ -19,3 +17,7 @@ spec:
         host: apibuilder-agent
         port:
           number: 8000
+      headers:
+        request:
+          add:
+            x-tenant: acme-team-gcp-stage-1715157708906--ApiBuilder
