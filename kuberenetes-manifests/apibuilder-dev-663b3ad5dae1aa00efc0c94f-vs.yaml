@@ -6,8 +6,6 @@ metadata:
 spec:
   gateways:
   - apiwiz-system/apiwiz-gateway
-  hosts:
-  - builder-test.ICIC.com
   http:
   - headers:
       request:
