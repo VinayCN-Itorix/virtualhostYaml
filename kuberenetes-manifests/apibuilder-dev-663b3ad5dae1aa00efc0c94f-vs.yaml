@@ -7,7 +7,7 @@ spec:
   gateways:
   - apiwiz-system/apiwiz-gateway
   hosts:
-  - testinng-builder.ICIC.com
+  - testing3-builder.ICIC.com
   http:
   - match:
     - uri:

@@ -101,3 +101,20 @@ spec:
     tls:
       credentialName: acme-team-gcp-stage-1715244929175
       mode: SIMPLE
+  - hosts:
+    - testing3-builder.ICIC.com
+    port:
+      name: https-acme-team-gcp-stage-1715245049194
+      number: 80
+      protocol: HTTP
+    tls:
+      httpsRedirect: true
+  - hosts:
+    - testing3-builder.ICIC.com
+    port:
+      name: https-acme-team-gcp-stage-1715245049194
+      number: 443
+      protocol: HTTPS
+    tls:
+      credentialName: acme-team-gcp-stage-1715245049069
+      mode: SIMPLE
