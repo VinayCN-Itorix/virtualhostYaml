@@ -101,3 +101,20 @@ spec:
     tls:
       credentialName: acme-team-gcp-stage-1715244929175
       mode: SIMPLE
+  - hosts:
+    - acme.apibuilder-test.com
+    port:
+      name: https-acme-team-gcp-stage-1715252627990
+      number: 80
+      protocol: HTTP
+    tls:
+      httpsRedirect: true
+  - hosts:
+    - acme.apibuilder-test.com
+    port:
+      name: https-acme-team-gcp-stage-1715252627990
+      number: 443
+      protocol: HTTPS
+    tls:
+      credentialName: acme-team-gcp-stage-1715252627280
+      mode: SIMPLE
