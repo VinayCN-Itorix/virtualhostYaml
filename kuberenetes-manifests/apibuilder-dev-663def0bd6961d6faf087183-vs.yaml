@@ -1,0 +1,23 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: apibuilder-dev-663def0bd6961d6faf087183
+  namespace: dev
+spec:
+  gateways:
+  - apiwiz-system/apiwiz-gateway
+  hosts:
+  - testing-builder.itorix.com
+  http:
+  - match:
+    - uri:
+        prefix: /
+    route:
+    - destination:
+        host: apibuilder-agent
+        port:
+          number: 8000
+      headers:
+        request:
+          add:
+            x-tenant: acme-team-gcp-stage-663def0bd6961d6faf087183--ApiBuilder
