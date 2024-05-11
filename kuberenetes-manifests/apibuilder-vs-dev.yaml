@@ -12,6 +12,7 @@ spec:
   - builder-test.ICIC.com
   - builder-test.ICIC.com
   - builder-test.ICIC.com
+  - icici.com
   http:
   - match:
     - uri:

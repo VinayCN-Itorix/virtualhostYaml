@@ -135,3 +135,20 @@ spec:
     tls:
       credentialName: acme-team-gcp-stage-1715335125735
       mode: SIMPLE
+  - hosts:
+    - icici.com
+    port:
+      name: https-acme-team-gcp-stage-1715426575537
+      number: 80
+      protocol: HTTP
+    tls:
+      httpsRedirect: true
+  - hosts:
+    - icici.com
+    port:
+      name: https-acme-team-gcp-stage-1715426575537
+      number: 443
+      protocol: HTTPS
+    tls:
+      credentialName: acme-team-gcp-stage-1715426575330
+      mode: SIMPLE
