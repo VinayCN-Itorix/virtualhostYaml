@@ -152,3 +152,20 @@ spec:
     tls:
       credentialName: acme-team-gcp-stage-1715426575330
       mode: SIMPLE
+  - hosts:
+    - testing-builder.itorix.com
+    port:
+      name: https-acme-team-gcp-stage-1715521998875
+      number: 80
+      protocol: HTTP
+    tls:
+      httpsRedirect: true
+  - hosts:
+    - testing-builder.itorix.com
+    port:
+      name: https-acme-team-gcp-stage-1715521998875
+      number: 443
+      protocol: HTTPS
+    tls:
+      credentialName: acme-team-gcp-stage-1715521998694
+      mode: SIMPLE
