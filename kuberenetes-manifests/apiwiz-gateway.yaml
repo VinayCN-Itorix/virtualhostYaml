@@ -50,3 +50,20 @@ spec:
     tls:
       credentialName: acme-team-gcp-stage-1715573116883
       mode: SIMPLE
+  - hosts:
+    - tefff-abcd.itorix.com
+    port:
+      name: https-acme-team-gcp-stage-1715574330983
+      number: 80
+      protocol: HTTP
+    tls:
+      httpsRedirect: true
+  - hosts:
+    - tefff-abcd.itorix.com
+    port:
+      name: https-acme-team-gcp-stage-1715574330983
+      number: 443
+      protocol: HTTPS
+    tls:
+      credentialName: acme-team-gcp-stage-1715574330972
+      mode: SIMPLE
