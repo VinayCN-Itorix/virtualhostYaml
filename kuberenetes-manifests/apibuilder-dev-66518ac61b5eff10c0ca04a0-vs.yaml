@@ -1,0 +1,23 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: apibuilder-dev-66518ac61b5eff10c0ca04a0
+  namespace: dev
+spec:
+  gateways:
+  - apiwiz-system/apiwiz-gateway
+  hosts:
+  - acme-team-dev-kggq.apiwiz.io
+  http:
+  - match:
+    - uri:
+        prefix: /
+    route:
+    - destination:
+        host: "null"
+        port:
+          number: 8115
+      headers:
+        request:
+          add:
+            x-tenant: acme-team-dev
